@@ -5,7 +5,7 @@ import { TiArrowLeftThick } from "react-icons/ti";
 export default function ComingSoon() {
   return (
     <Layout>
-      <div className="min-h-screen flex justify-center items-center">
+      <div className="full-h-page flex justify-center items-center">
         <div>
           <h1 className="text-5xl">Coming Soon!</h1>
           <div className="mt-4">
