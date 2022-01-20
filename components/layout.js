@@ -8,12 +8,12 @@ export default function Layout({ children }) {
         <title>Anshul Kanwar</title>
       </Head>
 
-      <div className="flex flex-col h-screen bg-black text-white">
-        <div className="flex-initial">
-          <Navbar />
-        </div>
-        <div className="flex-auto">
-          {children}
+      <div className="pb-10 bg-black text-white">
+        <div className="flex flex-col bg-black text-white">
+          <div className="flex-initial">
+            <Navbar />
+          </div>
+          <div className="flex-auto max-w-6xl mx-auto">{children}</div>
         </div>
       </div>
     </>
