@@ -1,19 +1,25 @@
 import Head from "next/head";
+import { useTheme } from "next-themes";
 import Navbar from "./navbar";
+import Footer from "./footer";
 
-export default function Layout({ children }) {
+export default function Layout({ children, title }) {
+  const { theme, setTheme } = useTheme();
+
   return (
     <>
       <Head>
-        <title>Anshul Kanwar</title>
+        <title>{`${title ? `${title} - ` : ""} Anshul Kanwar`}</title>
       </Head>
-
-      <div className="bg-black text-white">
-        <div className="flex flex-col bg-black text-white">
+      <div>
+        <div className="flex dark:bg-black dark:text-white flex-col">
           <div className="flex-initial">
-            <Navbar />
+            <Navbar theme={theme} setTheme={setTheme} />
           </div>
-          <div className="flex-auto max-w-4xl px-10 mx-auto">{children}</div>
+          <div className="flex-auto w-full max-w-5xl px-10 sm:px-20 mx-auto">
+            {children}
+          </div>
+          <Footer />
         </div>
       </div>
     </>

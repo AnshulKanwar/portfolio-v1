@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Layout from "./layout";
-import { TiArrowLeftThick } from "react-icons/ti";
+import { HiArrowLeft } from "react-icons/hi";
 
 export default function ComingSoon() {
   return (
@@ -12,7 +12,7 @@ export default function ComingSoon() {
             <Link href="/">
               <a>
                 <div className="flex items-center justify-center text-blue-400 hover:underline decoration-from-font">
-                  <TiArrowLeftThick className="mr-1"/> Go Back Home
+                  <HiArrowLeft className="mr-1"/> Go Back Home
                 </div>
               </a>
             </Link>
