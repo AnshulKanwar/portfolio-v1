@@ -7,7 +7,7 @@ import {
   atomOneDark,
 } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import Layout from "../../components/layout";
-import TitleBar from "../../components/titlebar";
+import TitleBar from "../../components/titleBar";
 import Date from "../../components/date";
 import { getAllPostsIds, getPost } from "../../lib/posts";
 
