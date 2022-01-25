@@ -13,15 +13,15 @@ export default function Blog({ allPosts }) {
             <div key={post.id} className="py-8 first:pt-0 last:pb-0">
               <Link href={`/blog/${post.id}`}>
                 <a>
-                  <div className="group">
+                  <div className="group flex flex-col space-y-4">
                     <h3 className="group-hover:underline text-2xl font-bold">
                       {post.title}
                     </h3>
-                    <p className="text-slate-500 dark:text-slate-300 text-sm">
-                      <Date dateString={post.date} />
+                    <p className="text-slate-500 dark:text-slate-400">
+                      {post.excerpt}
                     </p>
-                    <p className="text-slate-500 dark:text-slate-300 mt-2">
-                      {post.intro}
+                    <p className="text-slate-400 dark:text-slate-500 text-sm font-light">
+                      <Date dateString={post.date} />
                     </p>
                   </div>
                 </a>

@@ -53,8 +53,6 @@ export default function Navbar({ theme, setTheme }) {
                   <button
                     className="ml-5 text-2xl"
                     onClick={() => {
-                      console.log(theme);
-                      console.log(theme === "dark" ? "light" : "dark");
                       setTheme(theme === "dark" ? "light" : "dark");
                     }}
                   >
@@ -75,7 +73,7 @@ export default function Navbar({ theme, setTheme }) {
         </div>
         {isOpen && (
           <AnimatePresence>
-            <div className="min-h-[calc(100vh-theme(spacing.12))] flex justify-center items-center">
+            <div className="min-h-[calc(100vh-theme(spacing.12))] flex justify-center items-center md:hidden">
               <motion.ul
                 className="flex flex-col justify-center space-y-20 items-center text-slate-500 dark:text-slate-300"
                 initial={{ y: "-100%" }}

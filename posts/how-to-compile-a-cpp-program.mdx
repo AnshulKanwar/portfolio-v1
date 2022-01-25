@@ -1,0 +1,67 @@
+---
+title: "How to compile and run a C/C++ program on MacOS and Linux using terminal"
+date: "2022-01-24"
+excerpt: "So you decided to learn C/C++ and wrote your first hello world program but don’t know how to run it?"
+---
+
+There are a lot of steps involved in converting your `helloWorld.cpp` to `helloWorld.exe`. The following are the stages through which our program passes before being transformed into an executable form:
+
+<Image
+  src="/images/blog/compilation_steps.png"
+  width={972}
+  height={515}
+  quality={100}
+/>
+
+# Compiling a C/C++ program
+
+To compile a program on macOS we will use [clang](https://clang.llvm.org) which is the default compiler for macOS. On linux we’ll be using [gcc](https://gcc.gnu.org) .
+
+This basic syntax to compile a c file is as follows:
+
+```shell
+# on linux
+> gcc -o <output_file> source_file.c
+
+# on macOS
+> clang -o <output_file> source_file.c
+```
+
+<Alert color="info">
+  To compile a c++ file instead of a c file just replace gcc with g++ and clang
+  with clang++.
+</Alert>
+
+## Example
+
+Lets say we have the following C++ program in a file `helloworld.cpp`.
+
+```cpp
+#include <iostream>
+
+int main()
+{
+    std::cout << "Hello World!" << std::endl;
+    return 0;
+}
+```
+
+To compile this file open a terminal and `cd` into the directory where the current file is located. Now run the following command.
+
+```shell
+g++ -o helloworld helloworld.cpp
+```
+
+This will compile (i.e preprocess, compile, assemble and link) our file and the name of the output executable file will be `helloworld` (without extension).
+
+Now run the executable:
+
+```shell
+> ./helloworld
+Hello World!
+```
+
+<Alert color="info">
+  For more information regarding the usage of gcc/clang take a look at there
+  corresponding manpages.
+</Alert>
