@@ -27,11 +27,16 @@ export default function Navbar({ theme, setTheme }) {
             >
               <HiMenu className="text-3xl" />
             </button>
-            <div className="hidden md:block">
-              <ul className="flex justify-evenly items-center space-x-8 text-slate-500 dark:text-slate-300">
+            <div className="hidden md:block text-sm lg:text-base">
+              <ul className="flex justify-evenly items-center space-x-6 lg:space-x-8 text-slate-500 dark:text-slate-300">
                 <li className="hover:text-black dark:hover:text-white">
                   <Link href="/#about">
                     <a>About Me</a>
+                  </Link>
+                </li>
+                <li className="hover:text-black dark:hover:text-white">
+                  <Link href="/#skills">
+                    <a>Skills</a>
                   </Link>
                 </li>
                 <li className="hover:text-black dark:hover:text-white">
@@ -73,12 +78,12 @@ export default function Navbar({ theme, setTheme }) {
         </div>
         {isOpen && (
           <AnimatePresence>
-            <div className="min-h-[calc(100vh-theme(spacing.12))] flex justify-center items-center md:hidden">
+            <div className="min-h-[calc(100vh-theme(spacing.12))] flex justify-center items-center lg:hidden">
               <motion.ul
                 className="flex flex-col justify-center space-y-20 items-center text-slate-500 dark:text-slate-300"
-                initial={{ y: "-100%" }}
+                initial={{ y: "-150%" }}
                 animate={{ y: 0 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 0.5 }}
                 exit={{ y: "-100%" }}
               >
                 <li className="hover:text-black dark:hover:text-white">

@@ -11,7 +11,7 @@ export default function Section({ children, title, id }) {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 3 }}
+        transition={{ duration: 2 }}
       >
         <h1 className="text-4xl font-bold flex-none lg:text-left">{title}</h1>
         <div>{children}</div>
