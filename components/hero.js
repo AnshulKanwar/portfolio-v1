@@ -12,20 +12,8 @@ export default function Hero() {
         >
           <div className="flex flex-col mx-auto font-black text-6xl sm:text-8xl w-[250px] sm:w-[400px]">
             <span className="self-start">Hello </span>
-            <span className="self-end text-slate-600 dark:text-slate-400">World.</span>
+            <span className="self-end text-slate-600 dark:text-slate-400">Friend.</span>
           </div>
-          {/* <p className="mt-8 text-xl font-light">
-            My name is <span className="font-bold">Anshul Kanwar</span> and I
-            love{" "}
-            <span className="underline decoration-from-font">computers</span>,{" "}
-            <span className="underline decoration-from-font">
-              web designing
-            </span>
-            , and{" "}
-            <span className="underline decoration-from-font">
-              graphics programming.
-            </span>
-          </p> */}
         </motion.div>
       </div>
     </div>
