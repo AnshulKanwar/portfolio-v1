@@ -19,12 +19,12 @@ export default function About() {
           My main interests include{" "}
           <span className="font-bold">Web Development</span>,{" "}
           <span className="font-bold">Computer Graphics</span>, and{" "}
-          <span className="font-bold">Computer Architecture.</span>,{" "}
+          <span className="font-bold">Computer Architecture.</span>
         </p>
         <div className="mt-5 flex space-x-4 justify-center lg:justify-start">
-          <a className="flex items-center p-3 rounded-md bg-gray-500 text-white" href="https://github.com/K3rnalP4n1c"><DiGithubBadge className="mr-1" />Github</a>
-          <a className="flex items-center p-3 rounded-md bg-gray-500 text-white" href="https://www.linkedin.com/in/anshul-kanwar/"><BsLinkedin className="mr-1"/>LinkedIn</a>
-          <a className="flex items-center p-3 rounded-md bg-gray-500 text-white" href="mailto:anshulkanwar@icloud.com"><HiMail className="mr-1"/>Send mail</a>
+          <a className="flex items-center p-3 rounded-md bg-gray-500 text-white" href="https://github.com/K3rnalP4n1c" target="_blank" rel="noreferrer noopener"><DiGithubBadge className="mr-1" />Github</a>
+          <a className="flex items-center p-3 rounded-md bg-gray-500 text-white" href="https://www.linkedin.com/in/anshul-kanwar/" target="_blank" rel="noreferrer noopener"><BsLinkedin className="mr-1"/>LinkedIn</a>
+          <a className="flex items-center p-3 rounded-md bg-gray-500 text-white" href="mailto:anshulkanwar@icloud.com" target="_blank" rel="noreferrer noopener"><HiMail className="mr-1"/>Send mail</a>
         </div>
       </div>
     </Section>
