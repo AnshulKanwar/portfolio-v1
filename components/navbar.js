@@ -14,10 +14,10 @@ export default function Navbar({ theme, setTheme }) {
   return (
     <nav className="w-full">
       <div className="py-6">
-        <div className="flex h-12 justify-between mx-16 items-center">
+        <div className="flex h-12 justify-between mx-6 sm:mx-16 items-center">
           <Link href="/">
             <a>
-              <h1 className="text-3xl font-thin tracking-wide">Anshul Kanwar</h1>
+                <h1 className="text-2xl lg:text-3xl font-thin tracking-wide">{'<Anshul Kanwar />'}</h1>
             </a>
           </Link>
           <div>

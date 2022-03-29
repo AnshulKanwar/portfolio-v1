@@ -1,11 +1,9 @@
 import Section from "./section";
 import {
   DiReact,
-  DiBootstrap,
-  DiCss3,
-  DiHtml5,
   DiJsBadge,
   DiLinux,
+  DiRust,
   DiNodejsSmall,
   DiPython,
   DiSwift,
@@ -18,45 +16,33 @@ import {
   SiGatsby,
   SiNextdotjs,
   SiRedux,
+  SiIos,
   SiTailwindcss,
   SiOpengl,
-  SiArduino,
   SiGnubash,
-  SiNumpy,
-  SiPandas,
 } from "react-icons/si";
 
 export default function Skills() {
   return (
     <Section title="Skills" id="skills">
-      <div className="text-4xl flex flex-col items-center space-y-10">
-        <div className="flex space-x-8 items-center">
+      <div className="text-5xl grid grid-cols-3 gap-4 sm:grid-cols-6 sm:gap-6 place-items-center">
+          <DiLinux className="" />
+          <DiRust className="text-6xl hover:text-[#F54903]" />
+          <SiIos />
           <DiJsBadge className="hover:text-[#F0D63C]" />
-          <DiReact className="text-5xl hover:text-[#5FDBFA]" />
-          <DiHtml5 className="hover:text-[#EA632A]" />
-          <DiCss3 className="hover:text-[#2EA6D9]" />
-          <DiBootstrap className="text-5xl hover:text-[#8512FB]" />
+          <DiReact className="hover:text-[#5FDBFA]" />
           <SiGatsby className="hover:text-[#663399]" />
           <SiNextdotjs />
           <SiRedux className="hover:text-[#754BB2]" />
-        </div>
-        <div className="flex space-x-8 items-center">
-          <DiNodejsSmall className="text-5xl hover:text-[#42BA50]" />
-          <DiLinux className="" />
-          <DiPython className="text-5xl hover:text-[#4080B0]" />
-          <SiNumpy className="hover:text-[#003243] dark:hover:text-[#008BBA]" />
-          <SiPandas className="hover:text-[#090052] dark:hover:text-[#4831FF]" />
+          <DiNodejsSmall className="hover:text-[#42BA50]" />
+          <DiPython className="hover:text-[#4080B0]" />
           <SiTailwindcss className="hover:text-[#16B3B7]" />
-        </div>
-        <div className="flex space-x-8 items-center">
           <SiC className="hover:text-[#00427D]" />
           <SiCplusplus className="hover:text-[#025399]" />
-          <SiOpengl className="text-7xl hover:text-[#5184AF]" />
-          <DiSwift className="text-5xl hover:text-[#F05139]" />
-          <DiUnitySmall className="text-5xl" />
-          <SiArduino className="text-5xl hover:text-[#00979E]" />
+          <SiOpengl className="hover:text-[#5184AF]" />
+          <DiSwift className="hover:text-[#F05139]" />
+          <DiUnitySmall className="" />
           <SiGnubash className="hover:text-[#4BA21C]" />
-        </div>
       </div>
     </Section>
   );
