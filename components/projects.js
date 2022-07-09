@@ -29,7 +29,7 @@ export default function Projects() {
           <p className="text-blue-600 flex items-center hover:underline">
             <DiGithubBadge className="text-xl" />
             <a
-              href="https://github.com/K3rnalP4n1c/todo-react-native"
+              href="https://github.com/AnshulKanwar/todo-react-native"
               target="_blank"
               rel="noreferrer noopener"
             >
